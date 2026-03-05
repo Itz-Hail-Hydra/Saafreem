@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saafreem | Portfolio</title>
+    <link href="Main-crop.png" id="favicon" rel="icon" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <a href="#home" class="brand">Saafreem</a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="navbar-actions">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode"
+            id="theme-toggle"
+          >
+            <i class="fa-solid fa-moon icon-moon"></i>
+            <i class="fa-solid fa-sun icon-sun"></i>
+          </button>
+
+          <button
+            class="nav-toggle"
+            aria-label="Toggle navigation"
+            onclick="toggleMobileNav()"
+            type="button"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <nav class="container nav-links-mobile" id="nav-mobile" aria-label="Mobile">
+        <a href="#home" onclick="closeMobileNav()">Home</a>
+        <a href="#about" onclick="closeMobileNav()">About</a>
+        <a href="#skills" onclick="closeMobileNav()">Skills</a>
+        <a href="#contact" onclick="closeMobileNav()">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <main id="home" class="hero">
+      <section class="section-animate fade-in-up">
+        <div class="container hero-grid">
+          <div class="hero-image-wrapper hero-float">
+            <img src="Main.png" alt="Saafreem sitting on a bench in a park" />
+          </div>
+
+          <div class="hero-content">
+            <h1 class="hero-heading">
+              Hey, I'm <span>Saafreem</span>
+            </h1>
+            <p class="hero-subtitle">Frontend Developer | Web Enthusiast | Competitive Gamer</p>
+            <p class="hero-bio">
+              A Top 20 Global Player in Modern Combat 5 and a finalist in the 2022 Gameloft International Tournament (The Survivors, BD). My 19-year journey in gaming has transitioned from elite competition to a deep fascination with how digital worlds are built.
+            </p>
+            <p class="hero-bio">
+              With a strong Science and Mechanical Engineering background, I view code as the "engine" of the modern world. I am currently mastering HTML5 and CSS3 to build a solid foundation in structural logic and UI/UX design. My goal is to bridge the gap between mechanical systems and game development, bringing a competitor's discipline to the world of software engineering.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fa-regular fa-paper-plane"></i>
+                Contact Me
+              </a>
+<!--               <a href="#" class="btn btn-outline">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Download CV
+              </a> -->
+
+            </div>
+
+            <div class="hero-socials">
+              <span>Find me on</span>
+              <div class="social-icons">
+                <a href="#" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="Facebook">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" aria-label="WhatsApp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#" aria-label="Discord">
+                  <i class="fa-brands fa-discord"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section-animate fade-in-up">
+        <div class="container">
+          <h2 class="section-title"><span>About</span> Me</h2>
+          <div class="about-layout">
+            <div>
+              <div class="about-pill">
+                <i class="fa-regular fa-user"></i>
+                <span>Who I am</span>
+              </div>
+              <h3 class="about-heading">Developer focused on clean UI & UX.</h3>
+              <p class="about-text">
+                I'm a self‑driven frontend developer who enjoys experimenting
+                with modern web technologies and design systems. From landing
+                pages to small web apps, I care about details—typography,
+                spacing, animations, and performance all matter to me.
+              </p>
+              <p class="about-text">
+                When I'm not coding, I'm usually learning something new,
+                exploring UI inspirations, or refactoring old projects to make
+                them cleaner and faster.
+              </p>
+
+              <div class="about-meta">
+                <div>
+                  <div class="about-stat-title">Experience</div>
+                  <div class="about-stat-value">1+ years building UIs</div>
+                </div>
+                <div>
+                  <div class="about-stat-title">Focus</div>
+                  <div class="about-stat-value">Frontend & Interactions</div>
+                </div>
+                <div>
+                  <div class="about-stat-title">Location</div>
+                  <div class="about-stat-value">Remote‑friendly</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+              <img src="Main.png" alt="Portrait of Saafreem" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section-animate fade-in-up">
+        <div class="container">
+          <h2 class="section-title">My <span>Skills</span></h2>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Frontend</h3>
+              <p>Building responsive layouts and pixel‑perfect UIs.</p>
+              <div class="skill-pill-row">
+                <span class="skill-pill">HTML5</span>
+                <span class="skill-pill">CSS3</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">Responsive Design</span>
+              </div>
+            </article>
+
+            <article class="skill-card">
+              <h3>Styling & UI</h3>
+              <p>Modern visual design with clean, minimal aesthetics.</p>
+              <div class="skill-pill-row">
+                <span class="skill-pill">Flexbox</span>
+                <span class="skill-pill">Grid</span>
+                <span class="skill-pill">Animations</span>
+                <span class="skill-pill">Design Systems</span>
+              </div>
+            </article>
+
+            <article class="skill-card">
+              <h3>Tools</h3>
+              <p>Everyday tools that keep my workflow smooth.</p>
+              <div class="skill-pill-row">
+                <span class="skill-pill">Git</span>
+                <span class="skill-pill">GitHub</span>
+                <span class="skill-pill">VS Code</span>
+                <span class="skill-pill">Figma</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section-animate fade-in-up">
+        <div class="container contact-inner">
+          <h2 class="section-title"><span>Contact</span> Me</h2>
+          <p>
+            Have an idea, a project, or just want to say hello? Feel free to
+            reach out and I'll get back to you as soon as I can.
+          </p>
+          <a href="mailto:example@mail.com" class="btn btn-primary">
+            <i class="fa-regular fa-envelope"></i>
+            Send an Email
+          </a>
+<!--           <div class="contact-meta">
+            <span><strong>Email:</strong> example@mail.com</span>
+            <span><strong>Available for:</strong> freelance & collaborations</span>
+          </div> -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-inner">
+        <span>
+          © 2026 Saafreem — All rights reserved.
+        </span>
+        <span class="footer-credit">
+          Design enhancements with
+          <a href="https://github.com/itz-rj-here/" target="_blank" rel="noopener noreferrer">
+            It'z RJ
+          </a>
+        </span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
